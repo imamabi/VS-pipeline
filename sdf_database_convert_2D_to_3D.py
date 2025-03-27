@@ -9,7 +9,7 @@ from rdkit import rdBase
 from tqdm import tqdm
 from rdkit.Chem import Draw
 from rdkit.Chem.Draw import IPythonConsole
-#Chem.WrapLogs()
+Chem.WrapLogs()
 
 #Import open drug discovery toolkit 
 import oddt
