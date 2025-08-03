@@ -10,7 +10,7 @@ It provides tools for:
 - Clustering & chemical space visualization
 - Scaffold analysis for diversity assessment
 
-This is an upgraded version of the previous project, now with:
+This is an upgraded version of the previous project, 2D_similarity_search.py, now with:
 
 Combined ECFP & FCFP similarity search
 
@@ -24,4 +24,15 @@ To run pipeline:
 
 ```markdown
 python run_screening_pipeline.py -i molecules.sdf -r reference_molecules.sdf -o similar_molecules.sdf -c 0.90 -f rdkit
+```
+
+The pipeline workflow:
+```mermaid
+graph TD
+    A[Load dataset molecules] --> B[Standardize molecules]
+    B --> C[Calculate ECFP & FCFP similarity]
+    C --> D[Filter molecules by cutoff]
+    D --> E[Generate 3D & minimize for docking]
+    E --> F[Clustering & Visualization]
+    F --> G[Scaffold Analysis]
 ```
