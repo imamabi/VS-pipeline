@@ -23,7 +23,7 @@ Command-line interface for full pipeline automation
 To run pipeline: 
 
 ```markdown
-python run_screening_pipeline.py -i molecules.sdf -r reference_molecules.sdf -o similar_molecules.sdf -c 0.90 -f rdkit
+python run_screening_pipeline.py -i molecules.sdf -r reference_molecules.sdf -o similar_molecules.sdf -c 0.50 -f rdkit
 ```
 
 The pipeline workflow:
